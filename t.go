@@ -5,6 +5,9 @@ import (
     "github.com/shawnfeng/testmod"
 )
 
-func main() {
-    fmt.Println(testmod.Hi("roberto"))
+
+func Hidep(name string, arg string) string {
+	fmt.Println(testmod.Hi("testmod_dep mod roberto 1"))
+	return fmt.Sprintf("testmod_dep Hi dep, %s arg:%s", name, arg)
 }
+
